@@ -11,7 +11,7 @@ class TransactionType extends Model
      *
      * @var string
      */
-    protected $table = 'transaction_types';
+    protected $table = 'transactions_types';
 
     public function Transaction()
     {

@@ -23,4 +23,8 @@ class Account extends Model
     {
         return $this->hasMany('App\Transaction');
     }
+    public function Balance()
+    {
+        return $this->hasMany('App\Balance');
+    }
 }

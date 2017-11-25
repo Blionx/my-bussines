@@ -17,6 +17,7 @@ class CreateBalance extends Migration
             $table->increments('id');
             $table->integer('final_balance');
             $table->integer('transaction_id')->unsigned();
+            $table->integer('account_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->timestamps();
         });

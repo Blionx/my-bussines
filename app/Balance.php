@@ -21,4 +21,9 @@ class Balance extends Model
     {
         return $this->belongsTo('App\Transaction');
     }
+
+    public function Account ()
+    {
+        return $this->belongsTo('App\Account');
+    }
 }

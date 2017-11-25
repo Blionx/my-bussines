@@ -17,7 +17,7 @@ class AccountRepository extends Repository {
 
     public function all($columns = array('*'))
     {
-        return $this->user->Accounts()->get($columns);
+        return $this->user->Accounts()->with(['Transactions.TransactionType', 'Balance'])->get($columns);
     }
 
     public function create(array $data = array('*'))

@@ -23,6 +23,6 @@ class Transaction extends Model
     }
     public function TransactionType()
     {
-        return $this->hasOne('App\TransactionType');
+        return $this->belongsTo('App\TransactionType');
     }
 }
